@@ -20,7 +20,7 @@ const Gallery = () => {
       setFilteredImage("");
       images.filter((image) => {
         const matchImage =
-          e.target.value.length >= 3 &&
+          e.target.value.length >= 1 &&
           image.user.first_name
             .toUpperCase()
             .includes(e.target.value.toUpperCase()) &&
